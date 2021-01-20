@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My Live in exposition!</title>
+<!--    <link href='https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css' rel='stylesheet'>-->
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>

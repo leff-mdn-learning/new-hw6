@@ -3,10 +3,12 @@
 
 namespace AYakovlev\Controller;
 
+use AYakovlev\Core\View;
+
 class DefaultController
 {
     public function index()
     {
-        header('Location: /blog/articles');
+        View::render('about');
     }
 }
