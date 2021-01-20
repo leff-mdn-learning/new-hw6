@@ -4,8 +4,7 @@
     <ul>
         <li><a href="/">Main page</a></li>
         <li><a href="/aboutme/about">About me...</a></li>
-        <li><a href="/users/register">Зарегистрироваться...</a></li>
-    </ul>
+        </ul>
 </td>
 </tr>
 <tr>

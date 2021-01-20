@@ -73,5 +73,4 @@ class Request
     {
         return $this->method;
     }
-
 }

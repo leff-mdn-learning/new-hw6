@@ -4,9 +4,7 @@
 namespace AYakovlev\Core;
 
 
-use AYakovlev\Model\User;
-
-class App extends User
+class App
 {
     public function __construct()
     {
