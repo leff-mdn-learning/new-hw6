@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>My Live in exposition!</title>
+    <title>Patterns!</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>

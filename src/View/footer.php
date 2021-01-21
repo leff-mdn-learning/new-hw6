@@ -8,7 +8,7 @@
 </td>
 </tr>
 <tr>
-    <td class="footer" colspan="2">All rigths reserved (c)2020 MyBlog</td>
+    <td class="footer" colspan="2">All rigths reserved (c)2021 MyPatterns</td>
 </tr>
 </table>
 
