@@ -18,6 +18,12 @@ class CartController
 
     public function add(): void
     {
+        $customer = new Customer('Phil Wain');
+
+        $date = date('Y-m-d', time());
+        $time = date('H:i:s', time());
+        $cart = new Cart($customer, $date, $time);
+
         $product = new Product(
             'Xiaomi Mi max 2',
             200,
@@ -25,8 +31,15 @@ class CartController
             'it`s black',
             5
         );
-        $customer = new Customer('Phil Wain');
-        $cart = new Cart($customer);
+        $cart->addProduct($product);
+
+        $product = new Product(
+            'Honor 10',
+            500,
+            'phone',
+            'it`s blue',
+            1
+        );
         $cart->addProduct($product);
 
         View::render('addProduct', $cart->getItems());

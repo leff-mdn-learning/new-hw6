@@ -12,6 +12,10 @@ class App
 
     public function run()
     {
+        //
+        session_start();
+
+
         // разобрать запрос
         $request = new Request();
 

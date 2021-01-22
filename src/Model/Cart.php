@@ -17,8 +17,8 @@ class Cart implements \Iterator
 
     public function __construct(
         $customer,
-        $date = '2021-01-22',
-        $time = '12:02',
+        $date,
+        $time,
         $delivery = 'FastD',
         $discount = '0'
     )
@@ -63,4 +63,54 @@ class Cart implements \Iterator
     {
         return $this->items;
     }
+
+    /**
+     * @return int
+     */
+    public function getPosition(): int
+    {
+        return $this->position;
+    }
+
+    /**
+     * @return Customer
+     */
+    public function getCustomer(): Customer
+    {
+        return $this->customer;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDate(): string
+    {
+        return $this->date;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTime(): string
+    {
+        return $this->time;
+    }
+
+    /**
+     * @return Delivery
+     */
+    public function getDelivery(): Delivery
+    {
+        return $this->delivery;
+    }
+
+    /**
+     * @return Discount
+     */
+    public function getDiscount(): Discount
+    {
+        return $this->discount;
+    }
+
+
 }

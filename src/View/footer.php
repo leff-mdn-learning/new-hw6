@@ -4,7 +4,12 @@
     <ul>
         <li><a href="/">Main page</a></li>
         <li><a href="/aboutme/about">About me...</a></li>
-        </ul>
+    </ul>
+        <hr>
+    <ul>
+        <li><a href='/cart/add'>Добавить в корзину</a></li>
+        <li><a href='/order/checkout'>Сделать заказ</a></li>
+    </ul>
 </td>
 </tr>
 <tr>
