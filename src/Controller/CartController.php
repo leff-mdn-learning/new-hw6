@@ -18,7 +18,7 @@ class CartController
 
     public function add(Product $product, int $quantity, Customer $customer): Cart
     {
-
+        return new Cart($customer);
     }
 
 }

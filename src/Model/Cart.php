@@ -12,4 +12,10 @@ class Cart
     protected Delivery $delivery;
     protected int $quantity;
     protected Discount $discount;
+
+    public function __construct(Customer $customer,)
+    {
+
+    }
+
 }
