@@ -16,9 +16,20 @@ class CartController
         View::render('cart');
     }
 
-    public function add(Product $product, int $quantity, Customer $customer): Cart
+    public function add(): void
     {
-        return new Cart($customer);
+        $product = new Product(
+            'Xiaomi Mi max 2',
+            200,
+            'phone',
+            'it`s black',
+            5
+        );
+        $customer = new Customer('Phil Wain');
+        $cart = new Cart($customer);
+        $cart->addProduct($product);
+
+        View::render('addProduct', $cart->getItems());
     }
 
 }

@@ -7,16 +7,20 @@ namespace AYakovlev\Model;
 use Exception;
 use Traversable;
 
-class Product implements \IteratorAggregate
+class Product
 {
     protected string $title;
-    protected string $price;
+    protected int $price;
     protected string $category;
     protected string $description;
     protected int $quantity;
 
-    public function getIterator()
+    public function __construct($title, $price, $category, $description, $quantity)
     {
-        // TODO: Implement getIterator() method.
+        $this->title = $title;
+        $this->price = $price;
+        $this->category = $category;
+        $this->description = $description;
+        $this->quantity = $quantity;
     }
 }
