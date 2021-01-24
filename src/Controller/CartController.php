@@ -4,6 +4,7 @@
 namespace AYakovlev\Controller;
 
 
+use AYakovlev\Core\Session;
 use AYakovlev\Core\View;
 use AYakovlev\Model\Cart;
 use AYakovlev\Model\Customer;
@@ -42,6 +43,9 @@ class CartController
         );
         $cart->addProduct($product);
 
+        if (Session::addToSession($cart)) {
+            View::render('500', ['Error session'],500);
+        }
         View::render('addProduct', $cart->getItems());
     }
 
