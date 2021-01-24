@@ -16,6 +16,7 @@ class Cart implements \Iterator
     protected Discount $discount;
 
     public function __construct(
+        $items,
         $customer,
         $date,
         $time,
@@ -51,7 +52,7 @@ class Cart implements \Iterator
         $this->position = 0;
     }
 
-    public function addProduct(Product $product): void
+    public function addProduct(array $product): void
     {
         $this->items[] = $product;
     }

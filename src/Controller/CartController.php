@@ -23,30 +23,31 @@ class CartController
 
         $date = date('Y-m-d', time());
         $time = date('H:i:s', time());
-        $cart = new Cart($customer, $date, $time);
 
-        $product = new Product(
+        $product[] = new Product(
             'Xiaomi Mi max 2',
             200,
             'phone',
             'it`s black',
             5
         );
-        $cart->addProduct($product);
 
-        $product = new Product(
+        $product[] = new Product(
             'Honor 10',
             500,
             'phone',
             'it`s blue',
             1
         );
+        $cart = new Cart($product,$customer, $date, $time);
+
         $cart->addProduct($product);
 
         if (Session::addToSession($cart)) {
+            View::render('addProduct', $cart->getItems());
+        } else {
             View::render('500', ['Error session'],500);
         }
-        View::render('addProduct', $cart->getItems());
     }
 
 }
